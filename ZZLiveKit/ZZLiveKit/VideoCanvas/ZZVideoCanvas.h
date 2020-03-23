@@ -7,12 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZZVideoCanvas : UIView
+@protocol ZZVideoCanvasDelegate <NSObject>
 
+- (void)videoCaptureDataCallback:(CMSampleBufferRef)sampleBuffer;
 
+@end
+
+@interface ZZVideoCanvas : NSObject
+
+- (instancetype)initWithVideoView:(UIView *)videoView;
+
+@property (nonatomic,strong) UIView *renderView;
+
+@property (nonatomic,weak) id<ZZVideoCanvasDelegate> delegate;
+
+- (BOOL)startCapture;
+
+- (void)stopCapture;
 
 @end
 

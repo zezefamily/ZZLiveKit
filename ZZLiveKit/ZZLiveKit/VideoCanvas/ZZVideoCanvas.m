@@ -7,19 +7,27 @@
 //
 
 #import "ZZVideoCanvas.h"
-#import <AVFoundation/AVFoundation.h>
+
 @interface ZZVideoCanvas ()<AVCaptureVideoDataOutputSampleBufferDelegate>
 @property (nonatomic,strong) AVCaptureSession *captureSession;
 @property (nonatomic,strong) AVCaptureConnection *captureConnection;
 @property (nonatomic,strong) AVCaptureDeviceInput *captureDeviceInput;
 @property (nonatomic,strong) AVCaptureVideoDataOutput *videoDataOutput;
-
+@property (nonatomic,strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
+@property (nonatomic,assign) BOOL isCapturing;
 @end
 @implementation ZZVideoCanvas
-
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithVideoView:(UIView *)renderView
 {
-    if(self == [super initWithFrame:frame]){
+    if(self == [super init]){
+        _renderView = renderView;
+        [self loadAVComponent];
+    }
+    return self;
+}
+- (instancetype)init
+{
+    if(self == [super init]){
         [self loadAVComponent];
     }
     return self;
@@ -28,7 +36,7 @@
 - (void)loadAVComponent
 {
     [self loadDeviceInput];
-    [self loadDeviceOutPut];
+    [self loadDeviceOutput];
     [self loadAVSession];
 }
 
@@ -59,7 +67,7 @@
     }
     
 }
-- (void)loadDeviceOutPut
+- (void)loadDeviceOutput
 {
     self.videoDataOutput = [[AVCaptureVideoDataOutput alloc]init];
     NSDictionary *videoSetting = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange], kCVPixelBufferPixelFormatTypeKey, nil];
@@ -72,17 +80,82 @@
 }
 - (void)loadAVSession
 {
-    
+    self.captureSession = [[AVCaptureSession alloc]init];
+    //不使用应用实例 避免被异常挂起
+    self.captureSession.usesApplicationAudioSession = NO;
+    //添加输入设备到会话
+    if([self.captureSession canAddInput:self.captureDeviceInput]){
+        [self.captureSession addInput:self.captureDeviceInput];
+    }
+    //添加输出设备到会话
+    if([self.captureSession canAddOutput:self.videoDataOutput]){
+        [self.captureSession addOutput:self.videoDataOutput];
+    }
+    //设置分辨率
+    if([self.captureSession canSetSessionPreset:AVCaptureSessionPreset1280x720]){
+        [self.captureSession setSessionPreset:AVCaptureSessionPreset1280x720];
+    }
+    // 获取连接并设置屏幕方向
+    self.captureConnection = [self.videoDataOutput connectionWithMediaType:AVMediaTypeVideo];
+    self.captureConnection.videoOrientation = AVCaptureVideoOrientationLandscapeRight;
+    if(self.captureDeviceInput.device.position == AVCaptureDevicePositionFront && self.captureConnection.supportsVideoMirroring){
+        self.captureConnection.videoMirrored = YES;
+    }
+    //获取预览layer 设置方向并渲染
+    self.videoPreviewLayer = [AVCaptureVideoPreviewLayer layerWithSession:self.captureSession];
+    self.videoPreviewLayer.connection.videoOrientation = AVCaptureVideoOrientationLandscapeRight;
+    self.videoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+    if(self.renderView){
+        self.videoPreviewLayer.frame = self.renderView.bounds;
+        [self.renderView.layer addSublayer:self.videoPreviewLayer];
+    }
+}
+
+- (BOOL)startCapture
+{
+    if(self.isCapturing){
+        return NO;
+    }
+    // 摄像头权限判断
+    AVAuthorizationStatus videoAuthStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+    if (videoAuthStatus != AVAuthorizationStatusAuthorized)
+    {
+        return NO;
+    }
+    [self.captureSession startRunning];
+    self.isCapturing = YES;
+    return YES;
+}
+
+- (void)stopCapture
+{
+    if(self.isCapturing){
+        [self.captureSession stopRunning];
+        self.isCapturing = NO;
+    }
+}
+
+#pragma mark - 切换摄像头
+
+#pragma mark - 设置视频帧率 default:30fps
+
+#pragma mark - AVCaptureVideoDataOutputSampleBufferDelegate
+// 每当AVCaptureVideoDataOutput实例输出新的视频帧时触发调用
+- (void)captureOutput:(AVCaptureOutput *)output didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
+{
+    if([self.delegate respondsToSelector:@selector(videoCaptureDataCallback:)]){
+        [self.delegate videoCaptureDataCallback:sampleBuffer];
+    }
+}
+
+#pragma mark - setter  getter
+- (void)setRenderView:(UIView *)renderView
+{
+    _renderView = renderView;
+    if(self.renderView){
+        self.videoPreviewLayer.frame = self.renderView.bounds;
+        [self.renderView.layer addSublayer:self.videoPreviewLayer];
+    }
 }
 @end
 
-/*
- 年费会员套餐：
-    价格：CNY 1998 (等级78)
-    说明：1年内预约所有课程及服务,会员有效期内,可通过官网、公众号、客服热线预约课时，在预约时间内开始上课；
- 对您的问题，我们的回答是YES; 同时我们对’年费会员套餐‘做了进一步的解释：
- 年费会员套餐：
-     价格：CNY 1998 (等级78)
-     说明：1年内预约所有课程及服务,会员有效期内,可通过官网、公众号、客服热线预约课时，在预约时间内开始上课；
- 感谢您
- */

@@ -2,17 +2,20 @@
  platform :ios, '9.0'
 
 target 'ZZLiveKit' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
 
   # Pods for ZZLiveKit
   pod 'GPUImage', '~> 0.1.7'
+  pod 'AgoraRtcEngine_iOS_Edu', '~> 2.2.3.101'
+  
   target 'ZZLiveKitTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
   target 'ZZLiveKitUITests' do
+    inherit! :search_paths
     # Pods for testing
   end
 

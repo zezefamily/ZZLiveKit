@@ -29,7 +29,7 @@
 #import "ZZVideoCanvas.h"
 
 #import "GPUImage.h"
-@interface ViewController ()
+@interface ViewController ()<ZZVideoCanvasDelegate>
 {
     ZZVideoCanvas *_videoCanvas;
 }
@@ -46,17 +46,23 @@
 //    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:model];
 //    [[NSUserDefaults standardUserDefaults]setObject:data forKey:@"TEST"];
 //    [[NSUserDefaults standardUserDefaults]synchronize];
-    _videoCanvas  = [[ZZVideoCanvas alloc]initWithFrame:CGRectMake(100, 100, 400, 300)];
-    _videoCanvas.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:_videoCanvas];
+//    _videoCanvas  = [[ZZVideoCanvas alloc]initWithFrame:CGRectMake(100, 100, 400, 300)];
+//    _videoCanvas.backgroundColor = [UIColor lightGrayColor];
+//    _videoCanvas.delegate = self;
+//    [self.view addSubview:_videoCanvas];
 }
 
 - (IBAction)btnClick:(UIButton *)sender {
 //    NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"TEST"];
 //    ZZVideoPramasModel *model = [NSKeyedUnarchiver unarchiveObjectWithData:data];
 //    NSLog(@"model.vid == %@",model.vid);
+    [_videoCanvas startCapture];
 }
-
+- (void)videoCaptureDataCallback:(CMSampleBufferRef)sampleBuffer
+{
+    NSLog(@"videoCaptureDataCallback");
+    
+}
 /*
  
  // GPUImageColorMatrixFilter ????
