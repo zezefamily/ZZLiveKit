@@ -20,6 +20,7 @@
 		FF1A2AD9242228DC00D0D867 /* ZZVideoCodecTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1A2AD8242228DC00D0D867 /* ZZVideoCodecTool.m */; };
 		FF1A2ADC242228EC00D0D867 /* ZZAudioCodecTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1A2ADB242228EC00D0D867 /* ZZAudioCodecTool.m */; };
 		FF1A2AE02422298900D0D867 /* ZZVideoCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1A2ADF2422298900D0D867 /* ZZVideoCanvas.m */; };
+		FF5EECC8242466B600E18A0E /* ZZVideoPramasModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5EECC7242466B600E18A0E /* ZZVideoPramasModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		FF1A2ADB242228EC00D0D867 /* ZZAudioCodecTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZAudioCodecTool.m; sourceTree = "<group>"; };
 		FF1A2ADE2422298900D0D867 /* ZZVideoCanvas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZVideoCanvas.h; sourceTree = "<group>"; };
 		FF1A2ADF2422298900D0D867 /* ZZVideoCanvas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZVideoCanvas.m; sourceTree = "<group>"; };
+		FF5EECC6242466B600E18A0E /* ZZVideoPramasModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZVideoPramasModel.h; sourceTree = "<group>"; };
+		FF5EECC7242466B600E18A0E /* ZZVideoPramasModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZVideoPramasModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 			children = (
 				FF1A2ADE2422298900D0D867 /* ZZVideoCanvas.h */,
 				FF1A2ADF2422298900D0D867 /* ZZVideoCanvas.m */,
+				FF5EECC6242466B600E18A0E /* ZZVideoPramasModel.h */,
+				FF5EECC7242466B600E18A0E /* ZZVideoPramasModel.m */,
 			);
 			path = VideoCanvas;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5EECC8242466B600E18A0E /* ZZVideoPramasModel.m in Sources */,
 				FF1A2AD9242228DC00D0D867 /* ZZVideoCodecTool.m in Sources */,
 				FF1A2ADC242228EC00D0D867 /* ZZAudioCodecTool.m in Sources */,
 				FF1A2AA42422235B00D0D867 /* ViewController.m in Sources */,
@@ -486,7 +492,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKB2W89RHK;
 				INFOPLIST_FILE = ZZLiveKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,7 +510,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKB2W89RHK;
 				INFOPLIST_FILE = ZZLiveKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
