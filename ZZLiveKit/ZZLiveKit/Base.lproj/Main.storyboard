@@ -16,29 +16,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41h-6V-ydH">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Nl-YR-oDK">
+                                <rect key="frame" x="20" y="752" width="31" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="hiA-5Q-8rP"/>
-                                    <constraint firstAttribute="width" constant="46" id="ole-ZA-L8t"/>
+                                    <constraint firstAttribute="width" constant="31" id="ZT5-0o-fIb"/>
+                                    <constraint firstAttribute="height" constant="30" id="yrC-lO-XwK"/>
                                 </constraints>
-                                <state key="normal" title="测试"/>
+                                <state key="normal" title="开始"/>
                                 <connections>
-                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x2u-Ob-sfs"/>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N8b-MW-kvS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fH-dS-IxQ">
+                                <rect key="frame" x="66" y="752" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bmF-SL-NqT"/>
+                                    <constraint firstAttribute="width" constant="31" id="lYm-JE-78S"/>
+                                </constraints>
+                                <state key="normal" title="结束"/>
+                                <connections>
+                                    <action selector="stopCapture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BNr-IK-Mtp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03f-so-SXU">
+                                <rect key="frame" x="112" y="752" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="TqK-li-Gad"/>
+                                    <constraint firstAttribute="height" constant="30" id="pD1-uW-xca"/>
+                                </constraints>
+                                <state key="normal" title="切换摄像头"/>
+                                <connections>
+                                    <action selector="switchCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0YS-38-l35"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJd-gE-kyj">
+                                <rect key="frame" x="47" y="328" width="320" height="240"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="IYn-wu-Roa"/>
+                                    <constraint firstAttribute="height" constant="240" id="a40-jD-Fyr"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="41h-6V-ydH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LLB-rQ-luH"/>
-                            <constraint firstItem="41h-6V-ydH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kRU-BI-5Jg"/>
+                            <constraint firstItem="nJd-gE-kyj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ca4-vk-9lo"/>
+                            <constraint firstItem="0Nl-YR-oDK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PNn-p1-BZ4"/>
+                            <constraint firstItem="03f-so-SXU" firstAttribute="leading" secondItem="3fH-dS-IxQ" secondAttribute="trailing" constant="15" id="VPX-Hs-bD1"/>
+                            <constraint firstItem="nJd-gE-kyj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bMd-MU-rsG"/>
+                            <constraint firstItem="3fH-dS-IxQ" firstAttribute="leading" secondItem="0Nl-YR-oDK" secondAttribute="trailing" constant="15" id="jSS-YA-eNT"/>
+                            <constraint firstItem="03f-so-SXU" firstAttribute="firstBaseline" secondItem="0Nl-YR-oDK" secondAttribute="firstBaseline" id="loL-dZ-OLK"/>
+                            <constraint firstItem="3fH-dS-IxQ" firstAttribute="firstBaseline" secondItem="0Nl-YR-oDK" secondAttribute="firstBaseline" id="m3a-ec-8Is"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Nl-YR-oDK" secondAttribute="bottom" constant="80" id="oMi-mu-dja"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="renderView" destination="nJd-gE-kyj" id="VwN-sf-57y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="67"/>
+            <point key="canvasLocation" x="137.68115942028987" y="66.964285714285708"/>
         </scene>
     </scenes>
 </document>

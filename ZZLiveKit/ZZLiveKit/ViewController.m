@@ -27,17 +27,21 @@
 #import "ViewController.h"
 #import "ZZVideoPramasModel.h"
 #import "ZZVideoCanvas.h"
-
+#import "ZZVideoCodecTool.h"
 #import "GPUImage.h"
 @interface ViewController ()<ZZVideoCanvasDelegate>
 {
     ZZVideoCanvas *_videoCanvas;
+    ZZVideoCodecTool *_videoCodecTool;
 }
-@end
+@property (weak, nonatomic) IBOutlet UIView *renderView;
 
+@end
+static NSInteger deviceMode = 0;
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 //    ZZVideoPramasModel *model = [[ZZVideoPramasModel alloc]init];
@@ -46,10 +50,11 @@
 //    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:model];
 //    [[NSUserDefaults standardUserDefaults]setObject:data forKey:@"TEST"];
 //    [[NSUserDefaults standardUserDefaults]synchronize];
-//    _videoCanvas  = [[ZZVideoCanvas alloc]initWithFrame:CGRectMake(100, 100, 400, 300)];
-//    _videoCanvas.backgroundColor = [UIColor lightGrayColor];
-//    _videoCanvas.delegate = self;
-//    [self.view addSubview:_videoCanvas];
+    
+    _videoCanvas = [[ZZVideoCanvas alloc]initWithVideoView:self.renderView];
+    _videoCanvas.delegate = self;
+    
+    _videoCodecTool = [[ZZVideoCodecTool alloc]init];
 }
 
 - (IBAction)btnClick:(UIButton *)sender {
@@ -58,9 +63,16 @@
 //    NSLog(@"model.vid == %@",model.vid);
     [_videoCanvas startCapture];
 }
+- (IBAction)stopCapture:(id)sender {
+    [_videoCanvas stopCapture];
+}
+- (IBAction)switchCamera:(id)sender {
+    deviceMode = deviceMode == 0 ? 1:0;
+    [_videoCanvas switchCameraWithMode:deviceMode];
+}
 - (void)videoCaptureDataCallback:(CMSampleBufferRef)sampleBuffer
 {
-    NSLog(@"videoCaptureDataCallback");
+//    NSLog(@"videoCaptureDataCallback");
     
 }
 /*
