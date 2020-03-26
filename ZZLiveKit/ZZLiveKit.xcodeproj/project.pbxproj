@@ -25,6 +25,11 @@
 		FF1A2ADC242228EC00D0D867 /* ZZAudioCodecTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1A2ADB242228EC00D0D867 /* ZZAudioCodecTool.m */; };
 		FF1A2AE02422298900D0D867 /* ZZVideoCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1A2ADF2422298900D0D867 /* ZZVideoCanvas.m */; };
 		FF5EECC8242466B600E18A0E /* ZZVideoPramasModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5EECC7242466B600E18A0E /* ZZVideoPramasModel.m */; };
+		FF75FEB2242B251800B86A8E /* JXHVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF75FEB1242B251800B86A8E /* JXHVideoPlayer.m */; };
+		FF75FEB5242B586E00B86A8E /* ZZAVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF75FEB4242B586E00B86A8E /* ZZAVPlayerView.m */; };
+		FF75FEB8242B59F800B86A8E /* JXHPlayBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF75FEB7242B59F800B86A8E /* JXHPlayBackView.m */; };
+		FF75FEC0242C927300B86A8E /* message.json in Resources */ = {isa = PBXBuildFile; fileRef = FF75FEBF242C927300B86A8E /* message.json */; };
+		FF75FEC3242C949600B86A8E /* JXHPlayBackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF75FEC2242C949600B86A8E /* JXHPlayBackModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +88,15 @@
 		FF1A2ADF2422298900D0D867 /* ZZVideoCanvas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZVideoCanvas.m; sourceTree = "<group>"; };
 		FF5EECC6242466B600E18A0E /* ZZVideoPramasModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZVideoPramasModel.h; sourceTree = "<group>"; };
 		FF5EECC7242466B600E18A0E /* ZZVideoPramasModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZVideoPramasModel.m; sourceTree = "<group>"; };
+		FF75FEB0242B251800B86A8E /* JXHVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXHVideoPlayer.h; sourceTree = "<group>"; };
+		FF75FEB1242B251800B86A8E /* JXHVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXHVideoPlayer.m; sourceTree = "<group>"; };
+		FF75FEB3242B586E00B86A8E /* ZZAVPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZAVPlayerView.h; sourceTree = "<group>"; };
+		FF75FEB4242B586E00B86A8E /* ZZAVPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZAVPlayerView.m; sourceTree = "<group>"; };
+		FF75FEB6242B59F800B86A8E /* JXHPlayBackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXHPlayBackView.h; sourceTree = "<group>"; };
+		FF75FEB7242B59F800B86A8E /* JXHPlayBackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXHPlayBackView.m; sourceTree = "<group>"; };
+		FF75FEBF242C927300B86A8E /* message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = message.json; sourceTree = "<group>"; };
+		FF75FEC1242C949600B86A8E /* JXHPlayBackModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXHPlayBackModel.h; sourceTree = "<group>"; };
+		FF75FEC2242C949600B86A8E /* JXHPlayBackModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXHPlayBackModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +176,15 @@
 				FF1A2AA02422235B00D0D867 /* AppDelegate.m */,
 				FF1A2AA22422235B00D0D867 /* ViewController.h */,
 				FF1A2AA32422235B00D0D867 /* ViewController.m */,
+				FF75FEB0242B251800B86A8E /* JXHVideoPlayer.h */,
+				FF75FEB1242B251800B86A8E /* JXHVideoPlayer.m */,
+				FF75FEB3242B586E00B86A8E /* ZZAVPlayerView.h */,
+				FF75FEB4242B586E00B86A8E /* ZZAVPlayerView.m */,
+				FF75FEB6242B59F800B86A8E /* JXHPlayBackView.h */,
+				FF75FEB7242B59F800B86A8E /* JXHPlayBackView.m */,
+				FF75FEBF242C927300B86A8E /* message.json */,
+				FF75FEC1242C949600B86A8E /* JXHPlayBackModel.h */,
+				FF75FEC2242C949600B86A8E /* JXHPlayBackModel.m */,
 				FF1A2AA52422235B00D0D867 /* Main.storyboard */,
 				FF1A2AA82422235D00D0D867 /* Assets.xcassets */,
 				FF1A2AAA2422235D00D0D867 /* LaunchScreen.storyboard */,
@@ -332,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF1A2AAC2422235D00D0D867 /* LaunchScreen.storyboard in Resources */,
+				FF75FEC0242C927300B86A8E /* message.json in Resources */,
 				FF1A2AA92422235D00D0D867 /* Assets.xcassets in Resources */,
 				FF1A2AA72422235B00D0D867 /* Main.storyboard in Resources */,
 			);
@@ -458,12 +482,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF5EECC8242466B600E18A0E /* ZZVideoPramasModel.m in Sources */,
+				FF75FEB2242B251800B86A8E /* JXHVideoPlayer.m in Sources */,
 				FF1A2AD9242228DC00D0D867 /* ZZVideoCodecTool.m in Sources */,
 				FF1A2ADC242228EC00D0D867 /* ZZAudioCodecTool.m in Sources */,
+				FF75FEB8242B59F800B86A8E /* JXHPlayBackView.m in Sources */,
+				FF75FEB5242B586E00B86A8E /* ZZAVPlayerView.m in Sources */,
 				FF1A2AA42422235B00D0D867 /* ViewController.m in Sources */,
 				FF1A2AAF2422235D00D0D867 /* main.m in Sources */,
 				FF1A2AA12422235B00D0D867 /* AppDelegate.m in Sources */,
 				FF1A2AE02422298900D0D867 /* ZZVideoCanvas.m in Sources */,
+				FF75FEC3242C949600B86A8E /* JXHPlayBackModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

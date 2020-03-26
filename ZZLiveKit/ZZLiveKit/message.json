@@ -1,0 +1,1376 @@
+[
+  {
+    "packetType": 306,
+    "keyPutTime": 1584507815876,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{},\"currentpage\":\"board\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584507826746,
+    "packet": {
+      "options": { "1": "video-record", "2": "", "3": "1", "4": "start" }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584507830014,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":0,\"step_num\":0},\"currentpage\":\"ppt:0\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584507851986,
+    "packet": {
+      "options": {
+        "1": {
+          "domain": "redpacket",
+          "command": "start",
+          "content": { "mode": -1, "starcount": 16 }
+        }
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584507880832,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":1,\"step_num\":0},\"currentpage\":\"ppt:1\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584507937847,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":2,\"step_num\":0},\"currentpage\":\"ppt:2\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584507953412,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":2,\"step_num\":1},\"currentpage\":\"ppt:2\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584507966696,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":2,\"step_num\":2},\"currentpage\":\"ppt:2\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584507967753,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":2,\"step_num\":3},\"currentpage\":\"ppt:2\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584507987558,
+    "packet": {
+      "options": {
+        "1": {
+          "domain": "orb",
+          "command": "start",
+          "content": { "optioncount": 3, "rightAnswer": "C" }
+        }
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584507994066,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":2,\"step_num\":4},\"currentpage\":\"ppt:2\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508009569,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":2,\"step_num\":5},\"currentpage\":\"ppt:2\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508050661,
+    "packet": {
+      "options": {
+        "1": {
+          "domain": "yoka",
+          "command": "start",
+          "content": { "optioncount": 3, "rightAnswer": "B" }
+        }
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508059613,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":2,\"step_num\":6},\"currentpage\":\"ppt:2\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508060823,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":2,\"step_num\":7},\"currentpage\":\"ppt:2\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508064566,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":2,\"step_num\":8},\"currentpage\":\"ppt:2\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508068490,
+    "packet": {
+      "options": {
+        "1": {
+          "domain": "show",
+          "command": "start",
+          "content": { "currentindex": 2 }
+        }
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508083598,
+    "packet": {
+      "options": { "1": { "domain": "robstar", "command": "start" } }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508092240,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":0},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508121149,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":1},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508151705,
+    "packet": {
+      "options": {
+        "1": {
+          "domain": "i-clicker",
+          "command": "start",
+          "content": { "optioncount": 3, "rightAnswer": "A" }
+        }
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508158635,
+    "packet": { "options": { "1": { "domain": "like", "command": "start" } } }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508161143,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":2},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508173855,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":3},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508179502,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":4},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508213425,
+    "packet": {
+      "options": {
+        "1": {
+          "domain": "i-clicker",
+          "command": "start",
+          "content": { "optioncount": 2, "rightAnswer": "B" }
+        }
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508222094,
+    "packet": {
+      "options": {
+        "1": {
+          "domain": "lotterytheme",
+          "command": "start",
+          "content": { "lottery_data": 1 }
+        }
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508237763,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":5},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508238974,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":6},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508254663,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":7},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508272075,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":8},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508290392,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":9},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508297598,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":10},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508303102,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":11},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508305198,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":12},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508306663,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":13},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508307804,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":14},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508320768,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":15},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508339896,
+    "packet": {
+      "options": {
+        "1": {
+          "domain": "i-clicker",
+          "command": "start",
+          "content": { "optioncount": 3, "rightAnswer": "A" }
+        }
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508348710,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":16},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508349877,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":17},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508364290,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":18},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508370383,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":3,\"step_num\":19},\"currentpage\":\"ppt:3\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508377988,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":4,\"step_num\":0},\"currentpage\":\"ppt:4\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508382672,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":4,\"step_num\":1},\"currentpage\":\"ppt:4\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508398409,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":4,\"step_num\":2},\"currentpage\":\"ppt:4\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508424433,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":4,\"step_num\":3},\"currentpage\":\"ppt:4\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508469740,
+    "packet": { "options": { "1": { "domain": "like", "command": "start" } } }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508481175,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":0},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508495130,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":1},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508506432,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":2},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508608701,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":3},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508629462,
+    "packet": {
+      "options": {
+        "1": {
+          "domain": "i-clicker",
+          "command": "start",
+          "content": { "optioncount": 3, "rightAnswer": "B" }
+        }
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508642407,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":4},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508643864,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":5},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508653940,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":6},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508669647,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":7},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508679055,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":8},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508680553,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":9},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508688607,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":10},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508690509,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":11},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508692193,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":12},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508693750,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":13},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508719523,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.251748,\"y\":0.666667},{\"x\":0.251748,\"y\":0.671329},{\"x\":0.25,\"y\":0.678322},{\"x\":0.241259,\"y\":0.727273},{\"x\":0.241259,\"y\":0.729604},{\"x\":0.241259,\"y\":0.736597},{\"x\":0.23951,\"y\":0.736597}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":1,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508719681,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":0,\"trail\":[{\"x\":0.23951,\"y\":0.736597}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":3,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508720237,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.256993,\"y\":0.657343},{\"x\":0.258741,\"y\":0.666667},{\"x\":0.262238,\"y\":0.680653},{\"x\":0.263986,\"y\":0.692308},{\"x\":0.265734,\"y\":0.701632},{\"x\":0.269231,\"y\":0.710956},{\"x\":0.270979,\"y\":0.717949},{\"x\":0.270979,\"y\":0.72028},{\"x\":0.270979,\"y\":0.722611}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":1,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508720374,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":0,\"trail\":[{\"x\":0.270979,\"y\":0.724942},{\"x\":0.270979,\"y\":0.727273},{\"x\":0.270979,\"y\":0.729604},{\"x\":0.270979,\"y\":0.729604}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":3,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508720855,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.243007,\"y\":0.699301},{\"x\":0.246503,\"y\":0.703963},{\"x\":0.25,\"y\":0.706294},{\"x\":0.251748,\"y\":0.706294},{\"x\":0.253497,\"y\":0.706294},{\"x\":0.256993,\"y\":0.706294},{\"x\":0.258741,\"y\":0.706294},{\"x\":0.26049,\"y\":0.706294}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":1,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508721066,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":0,\"trail\":[{\"x\":0.262238,\"y\":0.706294},{\"x\":0.263986,\"y\":0.706294},{\"x\":0.265734,\"y\":0.706294},{\"x\":0.267483,\"y\":0.706294},{\"x\":0.267483,\"y\":0.706294}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":3,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508721880,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":0,\"trail\":[{\"x\":0.333916,\"y\":0.657343},{\"x\":0.333916,\"y\":0.659674},{\"x\":0.333916,\"y\":0.664336},{\"x\":0.333916,\"y\":0.668998},{\"x\":0.332168,\"y\":0.675991},{\"x\":0.332168,\"y\":0.682984},{\"x\":0.332168,\"y\":0.692308},{\"x\":0.332168,\"y\":0.703963},{\"x\":0.332168,\"y\":0.713287},{\"x\":0.332168,\"y\":0.717949},{\"x\":0.332168,\"y\":0.72028},{\"x\":0.332168,\"y\":0.72028}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":1,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508722586,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.354895,\"y\":0.668998},{\"x\":0.354895,\"y\":0.671329},{\"x\":0.354895,\"y\":0.67366},{\"x\":0.354895,\"y\":0.678322},{\"x\":0.354895,\"y\":0.680653},{\"x\":0.354895,\"y\":0.685315},{\"x\":0.354895,\"y\":0.687646},{\"x\":0.354895,\"y\":0.692308},{\"x\":0.354895,\"y\":0.694639},{\"x\":0.356643,\"y\":0.699301},{\"x\":0.358392,\"y\":0.701632}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":1,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508722785,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.358392,\"y\":0.703963},{\"x\":0.358392,\"y\":0.706294},{\"x\":0.36014,\"y\":0.706294},{\"x\":0.363636,\"y\":0.706294},{\"x\":0.365385,\"y\":0.706294},{\"x\":0.368881,\"y\":0.701632},{\"x\":0.368881,\"y\":0.699301},{\"x\":0.368881,\"y\":0.69697},{\"x\":0.368881,\"y\":0.694639},{\"x\":0.370629,\"y\":0.689977}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508722985,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.370629,\"y\":0.687646},{\"x\":0.370629,\"y\":0.685315},{\"x\":0.370629,\"y\":0.682984},{\"x\":0.370629,\"y\":0.678322},{\"x\":0.370629,\"y\":0.67366},{\"x\":0.370629,\"y\":0.668998},{\"x\":0.370629,\"y\":0.666667},{\"x\":0.370629,\"y\":0.662005},{\"x\":0.370629,\"y\":0.659674},{\"x\":0.370629,\"y\":0.657343}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508723189,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.367133,\"y\":0.657343},{\"x\":0.365385,\"y\":0.657343},{\"x\":0.363636,\"y\":0.659674},{\"x\":0.361888,\"y\":0.659674},{\"x\":0.36014,\"y\":0.662005},{\"x\":0.358392,\"y\":0.662005},{\"x\":0.358392,\"y\":0.664336},{\"x\":0.356643,\"y\":0.666667},{\"x\":0.354895,\"y\":0.668998},{\"x\":0.353147,\"y\":0.668998}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508723329,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":0,\"trail\":[{\"x\":0.351399,\"y\":0.671329},{\"x\":0.351399,\"y\":0.671329}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":3,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508724302,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.230769,\"y\":0.7669},{\"x\":0.232517,\"y\":0.7669},{\"x\":0.234266,\"y\":0.769231},{\"x\":0.234266,\"y\":0.778555},{\"x\":0.234266,\"y\":0.785548},{\"x\":0.234266,\"y\":0.792541},{\"x\":0.234266,\"y\":0.801865},{\"x\":0.234266,\"y\":0.81352},{\"x\":0.234266,\"y\":0.820513},{\"x\":0.234266,\"y\":0.827506}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":1,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508724469,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":0,\"trail\":[{\"x\":0.234266,\"y\":0.829837},{\"x\":0.234266,\"y\":0.829837}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":3,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508725017,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.23951,\"y\":0.7669},{\"x\":0.243007,\"y\":0.764569},{\"x\":0.244755,\"y\":0.762238},{\"x\":0.248252,\"y\":0.762238},{\"x\":0.25,\"y\":0.762238},{\"x\":0.253497,\"y\":0.762238},{\"x\":0.256993,\"y\":0.764569},{\"x\":0.258741,\"y\":0.7669},{\"x\":0.26049,\"y\":0.769231},{\"x\":0.262238,\"y\":0.773893},{\"x\":0.262238,\"y\":0.776224},{\"x\":0.262238,\"y\":0.780886},{\"x\":0.262238,\"y\":0.783217},{\"x\":0.262238,\"y\":0.785548}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":1,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508725300,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.26049,\"y\":0.79021},{\"x\":0.258741,\"y\":0.792541},{\"x\":0.255245,\"y\":0.797203},{\"x\":0.253497,\"y\":0.797203},{\"x\":0.253497,\"y\":0.799534},{\"x\":0.251748,\"y\":0.799534},{\"x\":0.258741,\"y\":0.804196}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508725418,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.262238,\"y\":0.806527},{\"x\":0.265734,\"y\":0.808858},{\"x\":0.267483,\"y\":0.808858},{\"x\":0.269231,\"y\":0.811189},{\"x\":0.269231,\"y\":0.81352},{\"x\":0.269231,\"y\":0.815851},{\"x\":0.270979,\"y\":0.818182}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508725635,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.270979,\"y\":0.820513},{\"x\":0.270979,\"y\":0.822844},{\"x\":0.270979,\"y\":0.825175},{\"x\":0.269231,\"y\":0.827506},{\"x\":0.265734,\"y\":0.827506},{\"x\":0.262238,\"y\":0.829837},{\"x\":0.258741,\"y\":0.834499},{\"x\":0.256993,\"y\":0.834499},{\"x\":0.255245,\"y\":0.834499},{\"x\":0.253497,\"y\":0.834499}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508725765,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":0,\"trail\":[{\"x\":0.251748,\"y\":0.834499},{\"x\":0.25,\"y\":0.834499},{\"x\":0.248252,\"y\":0.834499},{\"x\":0.246503,\"y\":0.834499},{\"x\":0.246503,\"y\":0.832168},{\"x\":0.246503,\"y\":0.832168}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":3,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508726765,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.326923,\"y\":0.778555},{\"x\":0.325175,\"y\":0.778555},{\"x\":0.325175,\"y\":0.776224},{\"x\":0.325175,\"y\":0.773893},{\"x\":0.325175,\"y\":0.769231},{\"x\":0.325175,\"y\":0.7669},{\"x\":0.326923,\"y\":0.7669},{\"x\":0.33042,\"y\":0.7669},{\"x\":0.332168,\"y\":0.7669}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":1,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508726982,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.335664,\"y\":0.773893},{\"x\":0.339161,\"y\":0.778555},{\"x\":0.339161,\"y\":0.783217},{\"x\":0.340909,\"y\":0.783217},{\"x\":0.340909,\"y\":0.785548},{\"x\":0.340909,\"y\":0.787879},{\"x\":0.340909,\"y\":0.79021},{\"x\":0.340909,\"y\":0.792541},{\"x\":0.340909,\"y\":0.794872},{\"x\":0.340909,\"y\":0.797203},{\"x\":0.340909,\"y\":0.799534},{\"x\":0.340909,\"y\":0.801865}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508727266,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.339161,\"y\":0.804196},{\"x\":0.339161,\"y\":0.806527},{\"x\":0.340909,\"y\":0.804196}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508727416,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.342657,\"y\":0.801865},{\"x\":0.342657,\"y\":0.799534},{\"x\":0.344406,\"y\":0.799534},{\"x\":0.346154,\"y\":0.797203}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508727552,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":0,\"trail\":[{\"x\":0.347902,\"y\":0.797203},{\"x\":0.34965,\"y\":0.797203},{\"x\":0.351399,\"y\":0.797203},{\"x\":0.353147,\"y\":0.797203},{\"x\":0.353147,\"y\":0.794872},{\"x\":0.353147,\"y\":0.794872}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":3,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508728065,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.365385,\"y\":0.7669},{\"x\":0.363636,\"y\":0.769231},{\"x\":0.363636,\"y\":0.771562},{\"x\":0.363636,\"y\":0.776224},{\"x\":0.363636,\"y\":0.780886},{\"x\":0.363636,\"y\":0.785548},{\"x\":0.363636,\"y\":0.79021},{\"x\":0.363636,\"y\":0.792541},{\"x\":0.363636,\"y\":0.794872},{\"x\":0.365385,\"y\":0.794872},{\"x\":0.365385,\"y\":0.797203},{\"x\":0.367133,\"y\":0.797203}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":1,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508728247,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.372378,\"y\":0.797203},{\"x\":0.374126,\"y\":0.792541},{\"x\":0.375874,\"y\":0.787879},{\"x\":0.375874,\"y\":0.783217},{\"x\":0.375874,\"y\":0.778555},{\"x\":0.375874,\"y\":0.776224},{\"x\":0.375874,\"y\":0.773893},{\"x\":0.375874,\"y\":0.771562},{\"x\":0.375874,\"y\":0.769231}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508728498,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.375874,\"y\":0.7669},{\"x\":0.375874,\"y\":0.764569},{\"x\":0.374126,\"y\":0.762238},{\"x\":0.374126,\"y\":0.759907},{\"x\":0.372378,\"y\":0.759907},{\"x\":0.368881,\"y\":0.759907},{\"x\":0.367133,\"y\":0.759907},{\"x\":0.365385,\"y\":0.759907},{\"x\":0.363636,\"y\":0.759907}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508728504,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":0,\"trail\":[{\"x\":0.363636,\"y\":0.759907}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":3,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508729280,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.265734,\"y\":0.909091},{\"x\":0.263986,\"y\":0.902098},{\"x\":0.26049,\"y\":0.892774},{\"x\":0.258741,\"y\":0.890443},{\"x\":0.258741,\"y\":0.888112},{\"x\":0.256993,\"y\":0.888112}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":1,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508729500,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.255245,\"y\":0.888112},{\"x\":0.251748,\"y\":0.888112},{\"x\":0.248252,\"y\":0.892774},{\"x\":0.244755,\"y\":0.899767},{\"x\":0.241259,\"y\":0.904429},{\"x\":0.23951,\"y\":0.911422},{\"x\":0.236014,\"y\":0.918415},{\"x\":0.236014,\"y\":0.923077},{\"x\":0.236014,\"y\":0.925408},{\"x\":0.236014,\"y\":0.93007},{\"x\":0.236014,\"y\":0.937063},{\"x\":0.236014,\"y\":0.941725}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508729715,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.237762,\"y\":0.946387},{\"x\":0.23951,\"y\":0.948718},{\"x\":0.241259,\"y\":0.951049},{\"x\":0.244755,\"y\":0.951049},{\"x\":0.246503,\"y\":0.95338},{\"x\":0.25,\"y\":0.955711},{\"x\":0.251748,\"y\":0.955711},{\"x\":0.255245,\"y\":0.955711},{\"x\":0.256993,\"y\":0.955711},{\"x\":0.263986,\"y\":0.948718},{\"x\":0.267483,\"y\":0.944056},{\"x\":0.269231,\"y\":0.937063}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508729849,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":0,\"trail\":[{\"x\":0.269231,\"y\":0.932401},{\"x\":0.270979,\"y\":0.932401},{\"x\":0.272727,\"y\":0.932401},{\"x\":0.272727,\"y\":0.932401}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":3,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508730763,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.33042,\"y\":0.878788},{\"x\":0.332168,\"y\":0.878788},{\"x\":0.332168,\"y\":0.876457},{\"x\":0.333916,\"y\":0.874126},{\"x\":0.335664,\"y\":0.874126},{\"x\":0.339161,\"y\":0.874126},{\"x\":0.340909,\"y\":0.874126},{\"x\":0.344406,\"y\":0.876457},{\"x\":0.346154,\"y\":0.881119},{\"x\":0.34965,\"y\":0.885781},{\"x\":0.353147,\"y\":0.892774},{\"x\":0.354895,\"y\":0.897436}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":1,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508731027,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.354895,\"y\":0.899767},{\"x\":0.354895,\"y\":0.902098},{\"x\":0.353147,\"y\":0.904429},{\"x\":0.347902,\"y\":0.909091},{\"x\":0.344406,\"y\":0.911422},{\"x\":0.342657,\"y\":0.913753},{\"x\":0.346154,\"y\":0.913753}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508731161,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.351399,\"y\":0.913753},{\"x\":0.354895,\"y\":0.916084},{\"x\":0.356643,\"y\":0.918415},{\"x\":0.358392,\"y\":0.920746},{\"x\":0.36014,\"y\":0.925408},{\"x\":0.361888,\"y\":0.925408},{\"x\":0.361888,\"y\":0.927739}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508731462,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":0,\"trail\":[{\"x\":0.361888,\"y\":0.93007},{\"x\":0.36014,\"y\":0.934732},{\"x\":0.356643,\"y\":0.939394},{\"x\":0.353147,\"y\":0.941725},{\"x\":0.347902,\"y\":0.946387},{\"x\":0.342657,\"y\":0.948718},{\"x\":0.339161,\"y\":0.951049},{\"x\":0.337413,\"y\":0.951049},{\"x\":0.337413,\"y\":0.951049}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":3,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508732076,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.370629,\"y\":0.88345},{\"x\":0.368881,\"y\":0.888112},{\"x\":0.368881,\"y\":0.890443},{\"x\":0.367133,\"y\":0.892774},{\"x\":0.367133,\"y\":0.895105},{\"x\":0.367133,\"y\":0.902098},{\"x\":0.367133,\"y\":0.904429},{\"x\":0.367133,\"y\":0.90676},{\"x\":0.367133,\"y\":0.911422},{\"x\":0.368881,\"y\":0.911422},{\"x\":0.370629,\"y\":0.916084}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":1,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508732276,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.372378,\"y\":0.918415},{\"x\":0.374126,\"y\":0.918415},{\"x\":0.377622,\"y\":0.918415},{\"x\":0.381119,\"y\":0.918415},{\"x\":0.382867,\"y\":0.913753},{\"x\":0.382867,\"y\":0.911422},{\"x\":0.382867,\"y\":0.909091}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508732511,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.382867,\"y\":0.90676},{\"x\":0.382867,\"y\":0.904429},{\"x\":0.382867,\"y\":0.902098},{\"x\":0.382867,\"y\":0.899767},{\"x\":0.382867,\"y\":0.897436},{\"x\":0.382867,\"y\":0.892774},{\"x\":0.382867,\"y\":0.888112},{\"x\":0.382867,\"y\":0.88345},{\"x\":0.381119,\"y\":0.881119},{\"x\":0.379371,\"y\":0.878788}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508732742,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.377622,\"y\":0.878788},{\"x\":0.374126,\"y\":0.878788},{\"x\":0.374126,\"y\":0.881119},{\"x\":0.372378,\"y\":0.881119},{\"x\":0.370629,\"y\":0.881119}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508732897,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":\"red\",\"trail\":[{\"x\":0.370629,\"y\":0.88345},{\"x\":0.368881,\"y\":0.88345},{\"x\":0.367133,\"y\":0.88345},{\"x\":0.365385,\"y\":0.88345}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":2,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508732898,
+    "packet": {
+      "options": {
+        "1": "ppt:5",
+        "2": "{\"command\":\"trail\",\"content\":{\"color\":0,\"trail\":[{\"x\":0.365385,\"y\":0.88345}],\"type\":\"pencil\",\"width\":\"0.0035\",\"widthType\":\"1\"},\"domain\":\"draw\",\"domain_id\":3,\"user_id\":null}",
+        "3": "n",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508745204,
+    "packet": {
+      "options": {
+        "1": {
+          "domain": "yoka",
+          "command": "start",
+          "content": { "optioncount": 3, "rightAnswer": "B" }
+        }
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508751706,
+    "packet": {
+      "options": { "1": { "domain": "award", "content": { "mode": "all" } } }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508756690,
+    "packet": { "options": { "1": "ppt:5", "2": "", "3": "n", "4": "del" } }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508756690,
+    "packet": { "options": { "1": "ppt:5", "2": "", "3": "n", "4": "del" } }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508756690,
+    "packet": { "options": { "1": "ppt:5", "2": "", "3": "n", "4": "del" } }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508756690,
+    "packet": { "options": { "1": "ppt:5", "2": "", "3": "n", "4": "del" } }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508756690,
+    "packet": { "options": { "1": "ppt:5", "2": "", "3": "n", "4": "del" } }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508756690,
+    "packet": { "options": { "1": "ppt:5", "2": "", "3": "n", "4": "del" } }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508756690,
+    "packet": { "options": { "1": "ppt:5", "2": "", "3": "n", "4": "del" } }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508761118,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":14},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508762543,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":15},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508771574,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":16},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508779097,
+    "packet": {
+      "options": {
+        "1": "classroominfo",
+        "2": "{\"content\":{\"docId\":\"20200317AIdemo002\",\"page_count\":6,\"page_num\":5,\"step_num\":17},\"currentpage\":\"ppt:5\",\"extent\":{},\"ratio\":\"10:10\",\"rest\":false,\"rostrum\":-1,\"score\":\"0:0\"}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 306,
+    "keyPutTime": 1584508790387,
+    "packet": {
+      "options": {
+        "1": "theme",
+        "2": "{\"currentindex\":0}",
+        "3": "1",
+        "4": "upd"
+      }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508790887,
+    "packet": {
+      "options": { "1": { "domain": "reward_statistics", "command": "start" } }
+    }
+  },
+  {
+    "packetType": 302,
+    "keyPutTime": 1584508802597,
+    "packet": {
+      "options": { "1": { "domain": "reward_statistics", "command": "close" } }
+    }
+  }
+]

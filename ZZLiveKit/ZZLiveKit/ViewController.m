@@ -28,11 +28,16 @@
 #import "ZZVideoPramasModel.h"
 #import "ZZVideoCanvas.h"
 #import "ZZVideoCodecTool.h"
-#import "GPUImage.h"
-@interface ViewController ()<ZZVideoCanvasDelegate>
+//#import "GPUImage.h"
+
+#import "JXHVideoPlayer.h"
+#import "JXHPlayBackView.h"
+//<ZZVideoCanvasDelegate>
+@interface ViewController ()
 {
     ZZVideoCanvas *_videoCanvas;
     ZZVideoCodecTool *_videoCodecTool;
+    JXHPlayBackView *_videoPlayer;
 }
 @property (weak, nonatomic) IBOutlet UIView *renderView;
 
@@ -51,20 +56,26 @@ static NSInteger deviceMode = 0;
 //    [[NSUserDefaults standardUserDefaults]setObject:data forKey:@"TEST"];
 //    [[NSUserDefaults standardUserDefaults]synchronize];
     
-    _videoCanvas = [[ZZVideoCanvas alloc]initWithVideoView:self.renderView];
-    _videoCanvas.delegate = self;
-    
-    _videoCodecTool = [[ZZVideoCodecTool alloc]init];
+//    _videoCanvas = [[ZZVideoCanvas alloc]initWithVideoView:self.renderView];
+//    _videoCanvas.delegate = self;
+//    _videoCodecTool = [[ZZVideoCodecTool alloc]init];
+    _videoPlayer = [[JXHPlayBackView alloc]initWithFrame:CGRectMake(200, 200, 400, 300)];
+    [self.view addSubview:_videoPlayer];
 }
 
 - (IBAction)btnClick:(UIButton *)sender {
 //    NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"TEST"];
 //    ZZVideoPramasModel *model = [NSKeyedUnarchiver unarchiveObjectWithData:data];
 //    NSLog(@"model.vid == %@",model.vid);
-    [_videoCanvas startCapture];
+//    [_videoCanvas startCapture];
+    double teacherServerTime = [[NSDate date]timeIntervalSince1970];
+    double myServerTime = teacherServerTime + 30000;
+    //http://bestmathvod.oss-cn-beijing.aliyuncs.com/test/bigclass/demo.m3u8
+    [_videoPlayer jxh_playeVideoWithURL:@"http://bestmathvod.oss-cn-beijing.aliyuncs.com/test/bigclass/demo.m3u8" scriptFileName:@"message.json" currentServerTime:myServerTime teacherServerTime:teacherServerTime];
+    
 }
 - (IBAction)stopCapture:(id)sender {
-    [_videoCanvas stopCapture];
+//    [_videoCanvas stopCapture];
 }
 - (IBAction)switchCamera:(id)sender {
     deviceMode = deviceMode == 0 ? 1:0;
