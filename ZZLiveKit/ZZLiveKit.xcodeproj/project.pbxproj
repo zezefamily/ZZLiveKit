@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1304B27D407074EEDE360623 /* libPods-ZZLiveKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED615C0D1855F83EB6837FB8 /* libPods-ZZLiveKit.a */; };
 		227255AD85BD679185A47DF9 /* libPods-ZZLiveKitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F15F0210762823F9EE546276 /* libPods-ZZLiveKitUITests.a */; };
-		2850989D50B7BD77E76B5084 /* Pods_ZZLiveKit_ZZLiveKitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995521FFE0F2BDE8D2CE9C13 /* Pods_ZZLiveKit_ZZLiveKitUITests.framework */; };
 		F19407B49E9EF44E87A95F58 /* libPods-ZZLiveKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7574487DAB0DFBBA020401D /* libPods-ZZLiveKitTests.a */; };
+		F4A4A16C242CF08000EBF1AE /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F4A4A16B242CEEEB00EBF1AE /* video.mp4 */; };
 		FF1A2AA12422235B00D0D867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1A2AA02422235B00D0D867 /* AppDelegate.m */; };
 		FF1A2AA42422235B00D0D867 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1A2AA32422235B00D0D867 /* ViewController.m */; };
 		FF1A2AA72422235B00D0D867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1A2AA52422235B00D0D867 /* Main.storyboard */; };
@@ -55,13 +55,13 @@
 		7DF957F873A9D8430447DDC3 /* Pods-ZZLiveKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKitUITests.release.xcconfig"; path = "Target Support Files/Pods-ZZLiveKitUITests/Pods-ZZLiveKitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		88E5814B850A06ADE2034C8F /* Pods-ZZLiveKit-ZZLiveKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKit-ZZLiveKitUITests.release.xcconfig"; path = "Target Support Files/Pods-ZZLiveKit-ZZLiveKitUITests/Pods-ZZLiveKit-ZZLiveKitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8CBE91E986CF8C9FD95E6FF1 /* Pods-ZZLiveKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKit.release.xcconfig"; path = "Target Support Files/Pods-ZZLiveKit/Pods-ZZLiveKit.release.xcconfig"; sourceTree = "<group>"; };
-		995521FFE0F2BDE8D2CE9C13 /* Pods_ZZLiveKit_ZZLiveKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZLiveKit_ZZLiveKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBE4EC6F590B1BAD4A2C242 /* Pods-ZZLiveKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKit.debug.xcconfig"; path = "Target Support Files/Pods-ZZLiveKit/Pods-ZZLiveKit.debug.xcconfig"; sourceTree = "<group>"; };
 		A980B756809BE4D8CCF3472F /* Pods-ZZLiveKit-ZZLiveKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKit-ZZLiveKitUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZZLiveKit-ZZLiveKitUITests/Pods-ZZLiveKit-ZZLiveKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D7574487DAB0DFBBA020401D /* libPods-ZZLiveKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZLiveKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED615C0D1855F83EB6837FB8 /* libPods-ZZLiveKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZLiveKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1024C6486A3C0C19CC59BFC /* Pods-ZZLiveKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKitTests.debug.xcconfig"; path = "Target Support Files/Pods-ZZLiveKitTests/Pods-ZZLiveKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F15F0210762823F9EE546276 /* libPods-ZZLiveKitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZLiveKitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4A4A16B242CEEEB00EBF1AE /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		FF1A2A9C2422235B00D0D867 /* ZZLiveKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZLiveKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1A2A9F2422235B00D0D867 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF1A2AA02422235B00D0D867 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,7 +122,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2850989D50B7BD77E76B5084 /* Pods_ZZLiveKit_ZZLiveKitUITests.framework in Frameworks */,
 				227255AD85BD679185A47DF9 /* libPods-ZZLiveKitUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +142,39 @@
 				7DF957F873A9D8430447DDC3 /* Pods-ZZLiveKitUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4A4A168242CE76100EBF1AE /* JXHPlayBackView */ = {
+			isa = PBXGroup;
+			children = (
+				F4A4A16A242CE77E00EBF1AE /* View */,
+				F4A4A169242CE77300EBF1AE /* Model */,
+			);
+			path = JXHPlayBackView;
+			sourceTree = "<group>";
+		};
+		F4A4A169242CE77300EBF1AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4A4A16B242CEEEB00EBF1AE /* video.mp4 */,
+				FF75FEBF242C927300B86A8E /* message.json */,
+				FF75FEC1242C949600B86A8E /* JXHPlayBackModel.h */,
+				FF75FEC2242C949600B86A8E /* JXHPlayBackModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4A4A16A242CE77E00EBF1AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF75FEB0242B251800B86A8E /* JXHVideoPlayer.h */,
+				FF75FEB1242B251800B86A8E /* JXHVideoPlayer.m */,
+				FF75FEB3242B586E00B86A8E /* ZZAVPlayerView.h */,
+				FF75FEB4242B586E00B86A8E /* ZZAVPlayerView.m */,
+				FF75FEB6242B59F800B86A8E /* JXHPlayBackView.h */,
+				FF75FEB7242B59F800B86A8E /* JXHPlayBackView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FF1A2A932422235A00D0D867 = {
@@ -176,15 +208,7 @@
 				FF1A2AA02422235B00D0D867 /* AppDelegate.m */,
 				FF1A2AA22422235B00D0D867 /* ViewController.h */,
 				FF1A2AA32422235B00D0D867 /* ViewController.m */,
-				FF75FEB0242B251800B86A8E /* JXHVideoPlayer.h */,
-				FF75FEB1242B251800B86A8E /* JXHVideoPlayer.m */,
-				FF75FEB3242B586E00B86A8E /* ZZAVPlayerView.h */,
-				FF75FEB4242B586E00B86A8E /* ZZAVPlayerView.m */,
-				FF75FEB6242B59F800B86A8E /* JXHPlayBackView.h */,
-				FF75FEB7242B59F800B86A8E /* JXHPlayBackView.m */,
-				FF75FEBF242C927300B86A8E /* message.json */,
-				FF75FEC1242C949600B86A8E /* JXHPlayBackModel.h */,
-				FF75FEC2242C949600B86A8E /* JXHPlayBackModel.m */,
+				F4A4A168242CE76100EBF1AE /* JXHPlayBackView */,
 				FF1A2AA52422235B00D0D867 /* Main.storyboard */,
 				FF1A2AA82422235D00D0D867 /* Assets.xcassets */,
 				FF1A2AAA2422235D00D0D867 /* LaunchScreen.storyboard */,
@@ -217,7 +241,6 @@
 			children = (
 				FF1A2AD4242226CD00D0D867 /* AudioToolbox.framework */,
 				FF1A2AD2242226C400D0D867 /* VideoToolbox.framework */,
-				995521FFE0F2BDE8D2CE9C13 /* Pods_ZZLiveKit_ZZLiveKitUITests.framework */,
 				ED615C0D1855F83EB6837FB8 /* libPods-ZZLiveKit.a */,
 				D7574487DAB0DFBBA020401D /* libPods-ZZLiveKitTests.a */,
 				F15F0210762823F9EE546276 /* libPods-ZZLiveKitUITests.a */,
@@ -354,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A4A16C242CF08000EBF1AE /* video.mp4 in Resources */,
 				FF1A2AAC2422235D00D0D867 /* LaunchScreen.storyboard in Resources */,
 				FF75FEC0242C927300B86A8E /* message.json in Resources */,
 				FF1A2AA92422235D00D0D867 /* Assets.xcassets in Resources */,
@@ -406,24 +430,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZZLiveKit/Pods-ZZLiveKit-resources.sh",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+				"${PODS_ROOT}/Target Support Files/Pods-ZZLiveKit/Pods-ZZLiveKit-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
+				"${PODS_ROOT}/Target Support Files/Pods-ZZLiveKit/Pods-ZZLiveKit-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

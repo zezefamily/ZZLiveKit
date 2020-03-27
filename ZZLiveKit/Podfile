@@ -8,6 +8,7 @@ target 'ZZLiveKit' do
   # Pods for ZZLiveKit
   pod 'GPUImage', '~> 0.1.7'
   pod 'MJExtension', '~> 3.0.15'
+  pod 'Toast', '~> 4.0.0'
 #  pod 'AgoraRtcEngine_iOS_Edu', '~> 2.2.3.101'
 #  pod 'MobileVLCKit', '~> 3.3.3'
   target 'ZZLiveKitTests' do
