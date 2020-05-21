@@ -25,19 +25,23 @@
  */
 
 #import "ViewController.h"
-#import "ZZVideoPramasModel.h"
-#import "ZZVideoCanvas.h"
-#import "ZZVideoCodecTool.h"
-//#import "GPUImage.h"
+//#import "ZZVideoPramasModel.h"
 
-#import "JXHVideoPlayer.h"
-#import "JXHPlayBackView.h"
-//<ZZVideoCanvasDelegate>
-@interface ViewController ()
+#import "Tools/ZZVideoCodecTool.h"
+#import "Tools/ZZVideoDecoder.h"
+#import "Tools/VPVideoStreamPlayLayer.h"
+//#import "GPUImage.h"
+#import "VideoCanvas/ZZVideoCanvas.h"
+
+
+
+@interface ViewController ()<ZZVideoCanvasDelegate,ZZVideoCodecToolDelegate,ZZVideoDecoderDelegate>
 {
     ZZVideoCanvas *_videoCanvas;
     ZZVideoCodecTool *_videoCodecTool;
-    JXHPlayBackView *_videoPlayer;
+    ZZVideoDecoder *_videoDecoder;
+    VPVideoStreamPlayLayer *_playLayer;
+//    JXHPlayBackView *_videoPlayer;
 }
 @property (weak, nonatomic) IBOutlet UIView *renderView;
 
@@ -55,37 +59,125 @@ static NSInteger deviceMode = 0;
 //    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:model];
 //    [[NSUserDefaults standardUserDefaults]setObject:data forKey:@"TEST"];
 //    [[NSUserDefaults standardUserDefaults]synchronize];
+    const char header[] = "\x00\x00\x00\x01";
+    size_t headerLen = (sizeof header) - 1;
     
-//    _videoCanvas = [[ZZVideoCanvas alloc]initWithVideoView:self.renderView];
-//    _videoCanvas.delegate = self;
-//    _videoCodecTool = [[ZZVideoCodecTool alloc]init];
-    _videoPlayer = [[JXHPlayBackView alloc]initWithFrame:CGRectMake(200, 200, 400, 300)];
-    [self.view addSubview:_videoPlayer];
+    _videoCanvas = [[ZZVideoCanvas alloc]initWithVideoView:self.renderView];
+    _videoCanvas.delegate = self;
+    ZZVideoEncoderParam *param = [[ZZVideoEncoderParam alloc]init];
+    _videoCodecTool = [[ZZVideoCodecTool alloc]initWithParam:param];
+    _videoCodecTool.delegate = self;
+    
+    _videoDecoder = [[ZZVideoDecoder alloc]init];
+    _videoDecoder.delegate = self;
+    
+    _playLayer = [[VPVideoStreamPlayLayer alloc]initWithFrame:CGRectMake(10, 20, 320, 240)];
+    _playLayer.backgroundColor = [UIColor lightGrayColor].CGColor;
+    [self.view.layer addSublayer:_playLayer];
+//    _videoPlayer = [[JXHPlayBackView alloc]initWithFrame:CGRectMake(0, 20, 640, 300)];
+//    [self.view addSubview:_videoPlayer];
 }
+
+- (void)videoCaptureDataCallback:(CMSampleBufferRef)sampleBuffer
+{
+    
+//    CFStringRef sref = kCMSampleBufferAttachmentKey_ForceKeyFrame;
+    [_videoCodecTool videoEncodeInputSampleBuffer:sampleBuffer isForceKeyFrame:NO];
+//    NSLog(@"sref == %@",sref);
+}
+/*
+ 00 00 00 01 06:  SEI信息
+ 00 00 00 01 67:  0x67&0x1f = 0x07 :SPS
+ 00 00 00 01 68:  0x68&0x1f = 0x08 :PPS
+ 00 00 00 01 65:  0x65&0x1f = 0x05: IDR Slice
+*/
+- (void)videoEncodeOutputDataCallBack:(NSData *)data isKeyFrame:(BOOL)isKeyFrame
+{
+    NSLog(@"data == %@",data);
+    [_videoDecoder decodeNaluData:data];
+}
+- (void)videoDecodeOutputDataCallback:(CVImageBufferRef)imageBuffer
+{
+    // CVImageBufferRef/CVPixelBufferRef  YUV格式->RGB格式
+    /*
+     解释：
+        Y:亮度(灰度)
+        U&V:色度(色彩及饱和度)
+     采样方式:
+        YUV4:4:4
+        YUV4:2:2
+        YUV4:2:0
+     */
+    NSLog(@"");
+    [_playLayer inputPixelBuffer:imageBuffer];
+}
+
+//- (void)test03
+//{
+//    UIImage *inputImage = [UIImage imageNamed:@"test"];
+//    GPUImagePicture *stillImageSource = [[GPUImagePicture alloc] initWithImage:inputImage];
+//    GPUImageSepiaFilter *stillImageFilter = [[GPUImageSepiaFilter alloc] init];
+//    [stillImageSource addTarget:stillImageFilter];
+//    [stillImageFilter useNextFrameForImageCapture];
+//    [stillImageSource processImage];
+//    UIImage *currentFilteredVideoFrame = [stillImageFilter imageFromCurrentFramebuffer];
+//}
+//- (void)test01
+//{
+//    GPUImageStillCamera *stillCamera = [[GPUImageStillCamera alloc] init];
+//    stillCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
+//    GPUImageGammaFilter *filter = [[GPUImageGammaFilter alloc] init];
+//    [stillCamera addTarget:filter];
+//    GPUImageView *filterView = [[GPUImageView alloc]initWithFrame:CGRectMake(100, 100, 400, 300)];
+//    [filter addTarget:filterView];
+//    [stillCamera startCameraCapture];
+////    [stillCamera capturePhotoAsJPEGProcessedUpToFilter:filter withCompletionHandler:^(NSData *processedJPEG, NSError *error) {
+//////        NSLog(@"data == %@",processedJPEG);
+////    }];
+//}
+//- (void)test02
+//{
+//    GPUImageVideoCamera *videoCamera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset640x480 cameraPosition:AVCaptureDevicePositionBack];
+//    videoCamera.delegate = self;
+//    videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
+////    GPUImageFilter *customFilter = [[GPUImageFilter alloc] initWithFragmentShaderFromFile:@"Shader1"];
+//    GPUImageSepiaFilter *customFilter = [[GPUImageSepiaFilter alloc] init];
+//    GPUImageView *filteredVideoView = [[GPUImageView alloc] initWithFrame:self.view.bounds];
+//    // Add the view somewhere so it's visible
+//    [self.view addSubview:filteredVideoView];
+//    [videoCamera addTarget:customFilter];
+//    [customFilter addTarget:filteredVideoView];
+//    [videoCamera startCameraCapture];
+//}
+//
+//- (void)willOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
+//{
+//    NSLog(@"willOutputSampleBuffer");
+//}
 
 - (IBAction)btnClick:(UIButton *)sender {
 //    NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"TEST"];
 //    ZZVideoPramasModel *model = [NSKeyedUnarchiver unarchiveObjectWithData:data];
 //    NSLog(@"model.vid == %@",model.vid);
-//    [_videoCanvas startCapture];
-    double teacherServerTime = [[NSDate date]timeIntervalSince1970];
-    double myServerTime = teacherServerTime + 30000;
-    //http://bestmathvod.oss-cn-beijing.aliyuncs.com/test/bigclass/demo.m3u8
-    [_videoPlayer jxh_playeVideoWithURL:@"http://bestmathvod.oss-cn-beijing.aliyuncs.com/test/bigclass/demo.m3u8" scriptFileName:@"message.json" currentServerTime:myServerTime teacherServerTime:teacherServerTime];
+    [_videoCanvas startCapture];
+    [_videoCodecTool startVideoEncode];
+//    double teacherServerTime = [[NSDate date]timeIntervalSince1970];
+//    double myServerTime = teacherServerTime + 30000;
+//    //http://bestmathvod.oss-cn-beijing.aliyuncs.com/test/bigclass/demo.m3u8
+////    [_videoPlayer jxh_loadVideoWithURL:@"http://bestmathvod.oss-cn-beijing.aliyuncs.com/test/bigclass/demo.m3u8"];
+//    [_videoPlayer jxh_playeVideoWithURL:@"http://bestmathvod.oss-cn-beijing.aliyuncs.com/test/bigclass/demo.m3u8" scriptFileName:@"message.json" currentServerTime:myServerTime teacherServerTime:teacherServerTime relativeStartTime:1584507826746];
+//    [self test02];
     
 }
 - (IBAction)stopCapture:(id)sender {
-//    [_videoCanvas stopCapture];
+    [_videoCanvas stopCapture];
+    [_videoCodecTool stopVideoEncode];
 }
 - (IBAction)switchCamera:(id)sender {
     deviceMode = deviceMode == 0 ? 1:0;
     [_videoCanvas switchCameraWithMode:deviceMode];
 }
-- (void)videoCaptureDataCallback:(CMSampleBufferRef)sampleBuffer
-{
-//    NSLog(@"videoCaptureDataCallback");
-    
-}
+
 /*
  
  // GPUImageColorMatrixFilter ????
@@ -101,7 +193,7 @@ static NSInteger deviceMode = 0;
  #import "GPUImageBrightnessFilter.h"        // 亮度 (brightness:-1~1 default:0)
  #import "GPUImageLevelsFilter.h"            // 色阶调整 The min, max, minOut and maxOut range [0, 1]. mid >= 0
  #import "GPUImageSharpenFilter.h"           // 锐化  (-4.0 - 4.0, with 0.0 as the default)
- #import "GPUImageGammaFilter.h"             // 灰度系数(0.0 - 3.0, with 1.0 as the default)
+ #import "GPUImageGammaFilter.h"             // 灰度系数(0.0 - 3.0, with 1.0 as the default)d
  
  */
 @end

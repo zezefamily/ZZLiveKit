@@ -3,14 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1304B27D407074EEDE360623 /* libPods-ZZLiveKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED615C0D1855F83EB6837FB8 /* libPods-ZZLiveKit.a */; };
-		227255AD85BD679185A47DF9 /* libPods-ZZLiveKitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F15F0210762823F9EE546276 /* libPods-ZZLiveKitUITests.a */; };
-		F19407B49E9EF44E87A95F58 /* libPods-ZZLiveKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7574487DAB0DFBBA020401D /* libPods-ZZLiveKitTests.a */; };
+		49BBBA0ACD94C2649B8B9510 /* libPods-ZZLiveKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 766BFA392F6E36E8CE746045 /* libPods-ZZLiveKit.a */; };
+		93256BA155257891BE3D541D /* libPods-ZZLiveKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3883104DAAB36732D9FC1D6F /* libPods-ZZLiveKitTests.a */; };
+		94D287B680BAC4AEE2ECFF0E /* libPods-ZZLiveKit-ZZLiveKitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA12DDBA4C17968AB7034891 /* libPods-ZZLiveKit-ZZLiveKitUITests.a */; };
 		F4A4A16C242CF08000EBF1AE /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F4A4A16B242CEEEB00EBF1AE /* video.mp4 */; };
+		FF02DA2124346C0200995B01 /* JXHPlayBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF02DA1F24346C0200995B01 /* JXHPlayBackView.m */; };
 		FF1A2AA12422235B00D0D867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1A2AA02422235B00D0D867 /* AppDelegate.m */; };
 		FF1A2AA42422235B00D0D867 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1A2AA32422235B00D0D867 /* ViewController.m */; };
 		FF1A2AA72422235B00D0D867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1A2AA52422235B00D0D867 /* Main.storyboard */; };
@@ -24,12 +25,15 @@
 		FF1A2AD9242228DC00D0D867 /* ZZVideoCodecTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1A2AD8242228DC00D0D867 /* ZZVideoCodecTool.m */; };
 		FF1A2ADC242228EC00D0D867 /* ZZAudioCodecTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1A2ADB242228EC00D0D867 /* ZZAudioCodecTool.m */; };
 		FF1A2AE02422298900D0D867 /* ZZVideoCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1A2ADF2422298900D0D867 /* ZZVideoCanvas.m */; };
+		FF4F1C2B242E088100F98DE0 /* Shader1.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FF4F1C29242E088000F98DE0 /* Shader1.fsh */; };
+		FF4F1C2C242E088100F98DE0 /* Shader2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FF4F1C2A242E088100F98DE0 /* Shader2.fsh */; };
+		FF5B0D51242DA7200070D3B8 /* JXHPlayBackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5B0D50242DA7200070D3B8 /* JXHPlayBackModel.m */; };
 		FF5EECC8242466B600E18A0E /* ZZVideoPramasModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5EECC7242466B600E18A0E /* ZZVideoPramasModel.m */; };
 		FF75FEB2242B251800B86A8E /* JXHVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF75FEB1242B251800B86A8E /* JXHVideoPlayer.m */; };
 		FF75FEB5242B586E00B86A8E /* ZZAVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF75FEB4242B586E00B86A8E /* ZZAVPlayerView.m */; };
-		FF75FEB8242B59F800B86A8E /* JXHPlayBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF75FEB7242B59F800B86A8E /* JXHPlayBackView.m */; };
 		FF75FEC0242C927300B86A8E /* message.json in Resources */ = {isa = PBXBuildFile; fileRef = FF75FEBF242C927300B86A8E /* message.json */; };
-		FF75FEC3242C949600B86A8E /* JXHPlayBackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF75FEC2242C949600B86A8E /* JXHPlayBackModel.m */; };
+		FFC41AF7247658990009C058 /* ZZVideoDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC41AF6247658990009C058 /* ZZVideoDecoder.m */; };
+		FFC41AFA247663000009C058 /* VPVideoStreamPlayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC41AF9247663000009C058 /* VPVideoStreamPlayLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,18 +54,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F5681336D272FAB72A0E569 /* Pods-ZZLiveKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKitUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZZLiveKitUITests/Pods-ZZLiveKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		31BDEB80BA42BA2139307863 /* Pods-ZZLiveKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKitTests.release.xcconfig"; path = "Target Support Files/Pods-ZZLiveKitTests/Pods-ZZLiveKitTests.release.xcconfig"; sourceTree = "<group>"; };
-		7DF957F873A9D8430447DDC3 /* Pods-ZZLiveKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKitUITests.release.xcconfig"; path = "Target Support Files/Pods-ZZLiveKitUITests/Pods-ZZLiveKitUITests.release.xcconfig"; sourceTree = "<group>"; };
-		88E5814B850A06ADE2034C8F /* Pods-ZZLiveKit-ZZLiveKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKit-ZZLiveKitUITests.release.xcconfig"; path = "Target Support Files/Pods-ZZLiveKit-ZZLiveKitUITests/Pods-ZZLiveKit-ZZLiveKitUITests.release.xcconfig"; sourceTree = "<group>"; };
-		8CBE91E986CF8C9FD95E6FF1 /* Pods-ZZLiveKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKit.release.xcconfig"; path = "Target Support Files/Pods-ZZLiveKit/Pods-ZZLiveKit.release.xcconfig"; sourceTree = "<group>"; };
-		9BBE4EC6F590B1BAD4A2C242 /* Pods-ZZLiveKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKit.debug.xcconfig"; path = "Target Support Files/Pods-ZZLiveKit/Pods-ZZLiveKit.debug.xcconfig"; sourceTree = "<group>"; };
-		A980B756809BE4D8CCF3472F /* Pods-ZZLiveKit-ZZLiveKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKit-ZZLiveKitUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZZLiveKit-ZZLiveKitUITests/Pods-ZZLiveKit-ZZLiveKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D7574487DAB0DFBBA020401D /* libPods-ZZLiveKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZLiveKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED615C0D1855F83EB6837FB8 /* libPods-ZZLiveKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZLiveKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1024C6486A3C0C19CC59BFC /* Pods-ZZLiveKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKitTests.debug.xcconfig"; path = "Target Support Files/Pods-ZZLiveKitTests/Pods-ZZLiveKitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F15F0210762823F9EE546276 /* libPods-ZZLiveKitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZLiveKitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3883104DAAB36732D9FC1D6F /* libPods-ZZLiveKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZLiveKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4079B74F662474753C13A391 /* Pods-ZZLiveKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKitTests.debug.xcconfig"; path = "Target Support Files/Pods-ZZLiveKitTests/Pods-ZZLiveKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		433C076F4305ED77BD30A5F5 /* Pods-ZZLiveKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKit.debug.xcconfig"; path = "Target Support Files/Pods-ZZLiveKit/Pods-ZZLiveKit.debug.xcconfig"; sourceTree = "<group>"; };
+		48B2E3C53D7B0D8EAB670211 /* Pods-ZZLiveKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKitTests.release.xcconfig"; path = "Target Support Files/Pods-ZZLiveKitTests/Pods-ZZLiveKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		60D7E8C5AA1FD913394159F8 /* Pods-ZZLiveKit-ZZLiveKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKit-ZZLiveKitUITests.release.xcconfig"; path = "Target Support Files/Pods-ZZLiveKit-ZZLiveKitUITests/Pods-ZZLiveKit-ZZLiveKitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		766BFA392F6E36E8CE746045 /* libPods-ZZLiveKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZLiveKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9177A5C60C13038CA8A59F66 /* Pods-ZZLiveKit-ZZLiveKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKit-ZZLiveKitUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZZLiveKit-ZZLiveKitUITests/Pods-ZZLiveKit-ZZLiveKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		971E4F37523C30CF91E03CCB /* Pods-ZZLiveKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZLiveKit.release.xcconfig"; path = "Target Support Files/Pods-ZZLiveKit/Pods-ZZLiveKit.release.xcconfig"; sourceTree = "<group>"; };
+		EA12DDBA4C17968AB7034891 /* libPods-ZZLiveKit-ZZLiveKitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZLiveKit-ZZLiveKitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A4A16B242CEEEB00EBF1AE /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		FF02DA1F24346C0200995B01 /* JXHPlayBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHPlayBackView.m; sourceTree = "<group>"; };
+		FF02DA2024346C0200995B01 /* JXHPlayBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHPlayBackView.h; sourceTree = "<group>"; };
 		FF1A2A9C2422235B00D0D867 /* ZZLiveKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZLiveKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1A2A9F2422235B00D0D867 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF1A2AA02422235B00D0D867 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,7 +74,7 @@
 		FF1A2AA62422235B00D0D867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF1A2AA82422235D00D0D867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF1A2AAB2422235D00D0D867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FF1A2AAD2422235D00D0D867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1A2AAD2422235D00D0D867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../ZZLiveKit/Info.plist; sourceTree = "<group>"; };
 		FF1A2AAE2422235D00D0D867 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF1A2AB42422235D00D0D867 /* ZZLiveKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZLiveKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1A2AB82422235D00D0D867 /* ZZLiveKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZLiveKitTests.m; sourceTree = "<group>"; };
@@ -86,17 +90,21 @@
 		FF1A2ADB242228EC00D0D867 /* ZZAudioCodecTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZAudioCodecTool.m; sourceTree = "<group>"; };
 		FF1A2ADE2422298900D0D867 /* ZZVideoCanvas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZVideoCanvas.h; sourceTree = "<group>"; };
 		FF1A2ADF2422298900D0D867 /* ZZVideoCanvas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZVideoCanvas.m; sourceTree = "<group>"; };
+		FF4F1C29242E088000F98DE0 /* Shader1.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader1.fsh; sourceTree = "<group>"; };
+		FF4F1C2A242E088100F98DE0 /* Shader2.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader2.fsh; sourceTree = "<group>"; };
+		FF5B0D4F242DA7200070D3B8 /* JXHPlayBackModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXHPlayBackModel.h; sourceTree = "<group>"; };
+		FF5B0D50242DA7200070D3B8 /* JXHPlayBackModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXHPlayBackModel.m; sourceTree = "<group>"; };
 		FF5EECC6242466B600E18A0E /* ZZVideoPramasModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZVideoPramasModel.h; sourceTree = "<group>"; };
 		FF5EECC7242466B600E18A0E /* ZZVideoPramasModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZVideoPramasModel.m; sourceTree = "<group>"; };
 		FF75FEB0242B251800B86A8E /* JXHVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXHVideoPlayer.h; sourceTree = "<group>"; };
 		FF75FEB1242B251800B86A8E /* JXHVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXHVideoPlayer.m; sourceTree = "<group>"; };
 		FF75FEB3242B586E00B86A8E /* ZZAVPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZAVPlayerView.h; sourceTree = "<group>"; };
 		FF75FEB4242B586E00B86A8E /* ZZAVPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZAVPlayerView.m; sourceTree = "<group>"; };
-		FF75FEB6242B59F800B86A8E /* JXHPlayBackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXHPlayBackView.h; sourceTree = "<group>"; };
-		FF75FEB7242B59F800B86A8E /* JXHPlayBackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXHPlayBackView.m; sourceTree = "<group>"; };
 		FF75FEBF242C927300B86A8E /* message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = message.json; sourceTree = "<group>"; };
-		FF75FEC1242C949600B86A8E /* JXHPlayBackModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXHPlayBackModel.h; sourceTree = "<group>"; };
-		FF75FEC2242C949600B86A8E /* JXHPlayBackModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXHPlayBackModel.m; sourceTree = "<group>"; };
+		FFC41AF5247658990009C058 /* ZZVideoDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZVideoDecoder.h; sourceTree = "<group>"; };
+		FFC41AF6247658990009C058 /* ZZVideoDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZVideoDecoder.m; sourceTree = "<group>"; };
+		FFC41AF8247663000009C058 /* VPVideoStreamPlayLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VPVideoStreamPlayLayer.h; sourceTree = "<group>"; };
+		FFC41AF9247663000009C058 /* VPVideoStreamPlayLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPVideoStreamPlayLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +114,7 @@
 			files = (
 				FF1A2AD5242226CD00D0D867 /* AudioToolbox.framework in Frameworks */,
 				FF1A2AD3242226C400D0D867 /* VideoToolbox.framework in Frameworks */,
-				1304B27D407074EEDE360623 /* libPods-ZZLiveKit.a in Frameworks */,
+				49BBBA0ACD94C2649B8B9510 /* libPods-ZZLiveKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F19407B49E9EF44E87A95F58 /* libPods-ZZLiveKitTests.a in Frameworks */,
+				93256BA155257891BE3D541D /* libPods-ZZLiveKitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,24 +130,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				227255AD85BD679185A47DF9 /* libPods-ZZLiveKitUITests.a in Frameworks */,
+				94D287B680BAC4AEE2ECFF0E /* libPods-ZZLiveKit-ZZLiveKitUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12CDE0D082981057ADC4E315 /* Pods */ = {
+		3A1EBE5DCFD82E033A7F30FB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9BBE4EC6F590B1BAD4A2C242 /* Pods-ZZLiveKit.debug.xcconfig */,
-				8CBE91E986CF8C9FD95E6FF1 /* Pods-ZZLiveKit.release.xcconfig */,
-				A980B756809BE4D8CCF3472F /* Pods-ZZLiveKit-ZZLiveKitUITests.debug.xcconfig */,
-				88E5814B850A06ADE2034C8F /* Pods-ZZLiveKit-ZZLiveKitUITests.release.xcconfig */,
-				F1024C6486A3C0C19CC59BFC /* Pods-ZZLiveKitTests.debug.xcconfig */,
-				31BDEB80BA42BA2139307863 /* Pods-ZZLiveKitTests.release.xcconfig */,
-				2F5681336D272FAB72A0E569 /* Pods-ZZLiveKitUITests.debug.xcconfig */,
-				7DF957F873A9D8430447DDC3 /* Pods-ZZLiveKitUITests.release.xcconfig */,
+				433C076F4305ED77BD30A5F5 /* Pods-ZZLiveKit.debug.xcconfig */,
+				971E4F37523C30CF91E03CCB /* Pods-ZZLiveKit.release.xcconfig */,
+				9177A5C60C13038CA8A59F66 /* Pods-ZZLiveKit-ZZLiveKitUITests.debug.xcconfig */,
+				60D7E8C5AA1FD913394159F8 /* Pods-ZZLiveKit-ZZLiveKitUITests.release.xcconfig */,
+				4079B74F662474753C13A391 /* Pods-ZZLiveKitTests.debug.xcconfig */,
+				48B2E3C53D7B0D8EAB670211 /* Pods-ZZLiveKitTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -147,7 +153,14 @@
 		F4A4A168242CE76100EBF1AE /* JXHPlayBackView */ = {
 			isa = PBXGroup;
 			children = (
-				F4A4A16A242CE77E00EBF1AE /* View */,
+				FF75FEB0242B251800B86A8E /* JXHVideoPlayer.h */,
+				FF75FEB1242B251800B86A8E /* JXHVideoPlayer.m */,
+				FF02DA2024346C0200995B01 /* JXHPlayBackView.h */,
+				FF02DA1F24346C0200995B01 /* JXHPlayBackView.m */,
+				FF75FEB3242B586E00B86A8E /* ZZAVPlayerView.h */,
+				FF75FEB4242B586E00B86A8E /* ZZAVPlayerView.m */,
+				FF5B0D4F242DA7200070D3B8 /* JXHPlayBackModel.h */,
+				FF5B0D50242DA7200070D3B8 /* JXHPlayBackModel.m */,
 				F4A4A169242CE77300EBF1AE /* Model */,
 			);
 			path = JXHPlayBackView;
@@ -158,23 +171,8 @@
 			children = (
 				F4A4A16B242CEEEB00EBF1AE /* video.mp4 */,
 				FF75FEBF242C927300B86A8E /* message.json */,
-				FF75FEC1242C949600B86A8E /* JXHPlayBackModel.h */,
-				FF75FEC2242C949600B86A8E /* JXHPlayBackModel.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		F4A4A16A242CE77E00EBF1AE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FF75FEB0242B251800B86A8E /* JXHVideoPlayer.h */,
-				FF75FEB1242B251800B86A8E /* JXHVideoPlayer.m */,
-				FF75FEB3242B586E00B86A8E /* ZZAVPlayerView.h */,
-				FF75FEB4242B586E00B86A8E /* ZZAVPlayerView.m */,
-				FF75FEB6242B59F800B86A8E /* JXHPlayBackView.h */,
-				FF75FEB7242B59F800B86A8E /* JXHPlayBackView.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		FF1A2A932422235A00D0D867 = {
@@ -185,7 +183,7 @@
 				FF1A2AC22422235D00D0D867 /* ZZLiveKitUITests */,
 				FF1A2A9D2422235B00D0D867 /* Products */,
 				FF1A2AD1242226C400D0D867 /* Frameworks */,
-				12CDE0D082981057ADC4E315 /* Pods */,
+				3A1EBE5DCFD82E033A7F30FB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,11 +206,12 @@
 				FF1A2AA02422235B00D0D867 /* AppDelegate.m */,
 				FF1A2AA22422235B00D0D867 /* ViewController.h */,
 				FF1A2AA32422235B00D0D867 /* ViewController.m */,
+				FF4F1C29242E088000F98DE0 /* Shader1.fsh */,
+				FF4F1C2A242E088100F98DE0 /* Shader2.fsh */,
 				F4A4A168242CE76100EBF1AE /* JXHPlayBackView */,
 				FF1A2AA52422235B00D0D867 /* Main.storyboard */,
 				FF1A2AA82422235D00D0D867 /* Assets.xcassets */,
 				FF1A2AAA2422235D00D0D867 /* LaunchScreen.storyboard */,
-				FF1A2AAD2422235D00D0D867 /* Info.plist */,
 				FF1A2AAE2422235D00D0D867 /* main.m */,
 			);
 			path = ZZLiveKit;
@@ -230,6 +229,7 @@
 		FF1A2AC22422235D00D0D867 /* ZZLiveKitUITests */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A2AAD2422235D00D0D867 /* Info.plist */,
 				FF1A2AC32422235D00D0D867 /* ZZLiveKitUITests.m */,
 				FF1A2AC52422235D00D0D867 /* Info.plist */,
 			);
@@ -241,9 +241,9 @@
 			children = (
 				FF1A2AD4242226CD00D0D867 /* AudioToolbox.framework */,
 				FF1A2AD2242226C400D0D867 /* VideoToolbox.framework */,
-				ED615C0D1855F83EB6837FB8 /* libPods-ZZLiveKit.a */,
-				D7574487DAB0DFBBA020401D /* libPods-ZZLiveKitTests.a */,
-				F15F0210762823F9EE546276 /* libPods-ZZLiveKitUITests.a */,
+				766BFA392F6E36E8CE746045 /* libPods-ZZLiveKit.a */,
+				EA12DDBA4C17968AB7034891 /* libPods-ZZLiveKit-ZZLiveKitUITests.a */,
+				3883104DAAB36732D9FC1D6F /* libPods-ZZLiveKitTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -255,6 +255,10 @@
 				FF1A2AD8242228DC00D0D867 /* ZZVideoCodecTool.m */,
 				FF1A2ADA242228EC00D0D867 /* ZZAudioCodecTool.h */,
 				FF1A2ADB242228EC00D0D867 /* ZZAudioCodecTool.m */,
+				FFC41AF5247658990009C058 /* ZZVideoDecoder.h */,
+				FFC41AF6247658990009C058 /* ZZVideoDecoder.m */,
+				FFC41AF8247663000009C058 /* VPVideoStreamPlayLayer.h */,
+				FFC41AF9247663000009C058 /* VPVideoStreamPlayLayer.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -277,11 +281,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF1A2AC82422235D00D0D867 /* Build configuration list for PBXNativeTarget "ZZLiveKit" */;
 			buildPhases = (
-				CD73439BF5C324D7E7E28278 /* [CP] Check Pods Manifest.lock */,
+				7570BA3E32B9B2C5DD1F6295 /* [CP] Check Pods Manifest.lock */,
 				FF1A2A982422235B00D0D867 /* Sources */,
 				FF1A2A992422235B00D0D867 /* Frameworks */,
 				FF1A2A9A2422235B00D0D867 /* Resources */,
-				3124E3A47C3A220F8EEAA756 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -377,6 +380,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4F1C2B242E088100F98DE0 /* Shader1.fsh in Resources */,
+				FF4F1C2C242E088100F98DE0 /* Shader2.fsh in Resources */,
 				F4A4A16C242CF08000EBF1AE /* video.mp4 in Resources */,
 				FF1A2AAC2422235D00D0D867 /* LaunchScreen.storyboard in Resources */,
 				FF75FEC0242C927300B86A8E /* message.json in Resources */,
@@ -424,46 +429,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3124E3A47C3A220F8EEAA756 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZZLiveKit/Pods-ZZLiveKit-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZZLiveKit/Pods-ZZLiveKit-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZZLiveKit/Pods-ZZLiveKit-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D375309346EEE4902FD41F6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZZLiveKitUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD73439BF5C324D7E7E28278 /* [CP] Check Pods Manifest.lock */ = {
+		7570BA3E32B9B2C5DD1F6295 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -485,6 +451,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8D375309346EEE4902FD41F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZZLiveKit-ZZLiveKitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -493,16 +481,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF5EECC8242466B600E18A0E /* ZZVideoPramasModel.m in Sources */,
+				FFC41AFA247663000009C058 /* VPVideoStreamPlayLayer.m in Sources */,
 				FF75FEB2242B251800B86A8E /* JXHVideoPlayer.m in Sources */,
 				FF1A2AD9242228DC00D0D867 /* ZZVideoCodecTool.m in Sources */,
 				FF1A2ADC242228EC00D0D867 /* ZZAudioCodecTool.m in Sources */,
-				FF75FEB8242B59F800B86A8E /* JXHPlayBackView.m in Sources */,
 				FF75FEB5242B586E00B86A8E /* ZZAVPlayerView.m in Sources */,
 				FF1A2AA42422235B00D0D867 /* ViewController.m in Sources */,
 				FF1A2AAF2422235D00D0D867 /* main.m in Sources */,
 				FF1A2AA12422235B00D0D867 /* AppDelegate.m in Sources */,
+				FFC41AF7247658990009C058 /* ZZVideoDecoder.m in Sources */,
+				FF02DA2124346C0200995B01 /* JXHPlayBackView.m in Sources */,
 				FF1A2AE02422298900D0D867 /* ZZVideoCanvas.m in Sources */,
-				FF75FEC3242C949600B86A8E /* JXHPlayBackModel.m in Sources */,
+				FF5B0D51242DA7200070D3B8 /* JXHPlayBackModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +661,7 @@
 		};
 		FF1A2AC92422235D00D0D867 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BBE4EC6F590B1BAD4A2C242 /* Pods-ZZLiveKit.debug.xcconfig */;
+			baseConfigurationReference = 433C076F4305ED77BD30A5F5 /* Pods-ZZLiveKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -692,7 +682,7 @@
 		};
 		FF1A2ACA2422235D00D0D867 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CBE91E986CF8C9FD95E6FF1 /* Pods-ZZLiveKit.release.xcconfig */;
+			baseConfigurationReference = 971E4F37523C30CF91E03CCB /* Pods-ZZLiveKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -713,7 +703,7 @@
 		};
 		FF1A2ACC2422235D00D0D867 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1024C6486A3C0C19CC59BFC /* Pods-ZZLiveKitTests.debug.xcconfig */;
+			baseConfigurationReference = 4079B74F662474753C13A391 /* Pods-ZZLiveKitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -732,7 +722,7 @@
 		};
 		FF1A2ACD2422235D00D0D867 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31BDEB80BA42BA2139307863 /* Pods-ZZLiveKitTests.release.xcconfig */;
+			baseConfigurationReference = 48B2E3C53D7B0D8EAB670211 /* Pods-ZZLiveKitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -751,7 +741,7 @@
 		};
 		FF1A2ACF2422235D00D0D867 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F5681336D272FAB72A0E569 /* Pods-ZZLiveKitUITests.debug.xcconfig */;
+			baseConfigurationReference = 9177A5C60C13038CA8A59F66 /* Pods-ZZLiveKit-ZZLiveKitUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZZLiveKitUITests/Info.plist;
@@ -769,7 +759,7 @@
 		};
 		FF1A2AD02422235D00D0D867 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DF957F873A9D8430447DDC3 /* Pods-ZZLiveKitUITests.release.xcconfig */;
+			baseConfigurationReference = 60D7E8C5AA1FD913394159F8 /* Pods-ZZLiveKit-ZZLiveKitUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZZLiveKitUITests/Info.plist;

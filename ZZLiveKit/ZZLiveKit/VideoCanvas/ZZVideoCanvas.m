@@ -18,8 +18,22 @@
  Notifications:
     AVCaptureSessionRuntimeErrorNotification
     AVCaptureDeviceWasConnectedNotification/AVCaptureDeviceWasDisconnectedNotification
-    
  */
+/**
+ 
+ [UIDevice userInterfaceIdiom] == UIUserInterfaceIdiomPhone
+ [UIDevice userInterfaceIdiom] == UIUserInterfaceIdiomPad
+ 
+ #define  IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+ #define  IS_PAD (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)
+ 
+ #ifdef IS_IPHONE
+ //#import iPhone的framework
+ #else
+ //#import iPad的framework
+ #endif
+ 
+*/
 
 
 #import "ZZVideoCanvas.h"
@@ -41,6 +55,7 @@
     if(self == [super init]){
         _renderView = renderView;
         [self loadAVComponent];
+        
     }
     return self;
 }
@@ -86,6 +101,7 @@
 //        }
         if(device.position == AVCaptureDevicePositionBack){
             _backCamera = device;
+            
         }
         if(device.position == AVCaptureDevicePositionFront){
             _frontCamera = device;
@@ -108,8 +124,21 @@
     self.captureDeviceInput = [self getCaptureDeviceWithMode:0];
     if(self.captureDeviceInput == nil){
         NSLog(@"AVCaptureDevice => AVCaptureDeviceInput失败");
+        return;
     }
 }
+
+- (void)setFrameRate:(NSInteger)frameRate
+{
+    NSInteger rate = frameRate;
+    AVFrameRateRange *frameRange = [self.captureDeviceInput.device.activeFormat.videoSupportedFrameRateRanges objectAtIndex:0];
+    if(rate > frameRange.maxFrameRate || rate < frameRange.minFrameRate){return;}
+    [self.captureSession beginConfiguration];
+    self.captureDeviceInput.device.activeVideoMaxFrameDuration = CMTimeMake(1, (int)rate);
+    self.captureDeviceInput.device.activeVideoMinFrameDuration = CMTimeMake(1, (int)rate);
+    [self.captureSession commitConfiguration];
+}
+
 - (void)loadDeviceOutput
 {
     self.videoDataOutput = [[AVCaptureVideoDataOutput alloc]init];
@@ -121,9 +150,6 @@
     [self.videoDataOutput setSampleBufferDelegate:self queue:output_queue];
     //丢弃延迟的帧
     self.videoDataOutput.alwaysDiscardsLateVideoFrames = YES;
-    //设置帧率为15fps
-    self.videoDataOutput.minFrameDuration = CMTimeMake(1,15);
-    
 }
 - (void)loadAVSession
 {
@@ -148,6 +174,7 @@
     if(self.captureDeviceInput.device.position == AVCaptureDevicePositionFront && self.captureConnection.supportsVideoMirroring){
         self.captureConnection.videoMirrored = YES;
     }
+    [self setFrameRate:15];
     //获取预览layer 设置方向并渲染
     self.videoPreviewLayer = [AVCaptureVideoPreviewLayer layerWithSession:self.captureSession];
     self.videoPreviewLayer.connection.videoOrientation = AVCaptureVideoOrientationLandscapeRight;
@@ -192,6 +219,12 @@
     self.captureDeviceInput = [self getCaptureDeviceWithMode:mode];
     if([self.captureSession canAddInput:self.captureDeviceInput]){
         [self.captureSession addInput:self.captureDeviceInput];
+    }
+    //这里需要重新设置一下
+    self.captureConnection = [self.videoDataOutput connectionWithMediaType:AVMediaTypeVideo];
+    self.captureConnection.videoOrientation = AVCaptureVideoOrientationLandscapeRight;
+    if(self.captureDeviceInput.device.position == AVCaptureDevicePositionFront && self.captureConnection.supportsVideoMirroring){
+        self.captureConnection.videoMirrored = YES;
     }
     [self.captureSession commitConfiguration];
 }

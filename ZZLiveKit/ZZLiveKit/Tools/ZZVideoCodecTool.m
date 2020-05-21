@@ -52,7 +52,7 @@
 - (void)instanceSession
 {
     //1.创建编码器
-    OSStatus status = VTCompressionSessionCreate(NULL, 640, 320, kCMVideoCodecType_H264, NULL, NULL, NULL, outputCallback, (__bridge void * _Nullable)(self), &(_sessionRef));
+    OSStatus status = VTCompressionSessionCreate(NULL, 320, 240, kCMVideoCodecType_H264, NULL, NULL, NULL, outputCallback, (__bridge void * _Nullable)(self), &(_sessionRef));
     if(noErr != status){
         NSLog(@"VTCompressionSessionCreate failed:%d",(int)status);
         return;
@@ -119,6 +119,16 @@
     //CMSampleBufferRef --> CVImageBufferRef
     CVImageBufferRef imageBuffer = (CVImageBufferRef)CMSampleBufferGetImageBuffer(sampleBuffer);
     NSDictionary *frameProperties = @{(__bridge NSString *)kVTEncodeFrameOptionKey_ForceKeyFrame:@(0)};
+    /*
+     VTCompressionSessionEncodeFrame(
+        CM_NONNULL VTCompressionSessionRef    session,
+        CM_NONNULL CVImageBufferRef            imageBuffer,
+        CMTime                                presentationTimeStamp,
+        CMTime                                duration, // may be kCMTimeInvalid
+        CM_NULLABLE CFDictionaryRef            frameProperties,
+        void * CM_NULLABLE                    sourceFrameRefcon,
+        VTEncodeInfoFlags * CM_NULLABLE        infoFlagsOut )
+     */
     VTCompressionSessionEncodeFrame(_sessionRef, imageBuffer, kCMTimeInvalid, kCMTimeInvalid, (__bridge CFDictionaryRef)frameProperties, NULL, NULL);
     return YES;
 }

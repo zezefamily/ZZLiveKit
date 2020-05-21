@@ -2,7 +2,7 @@
 //  JXHPlayBackModel.h
 //  ZZLiveKit
 //
-//  Created by 泽泽 on 2020/3/26.
+//  Created by 泽泽 on 2020/3/27.
 //  Copyright © 2020 泽泽. All rights reserved.
 //
 
@@ -17,10 +17,3 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
-/**
- "packetType": 306,
- "keyPutTime": 1584507826746,
- "packet": {
-   "options": { "1": "video-record", "2": "", "3": "1", "4": "start" }
- }
- */
